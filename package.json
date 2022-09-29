@@ -7,11 +7,16 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint . --ext .ts,.tsx"
+    "lint": "eslint . --ext .ts,.tsx",
+    "server": "npx json-server --watch db.json --port 5000 --delay 1000"
   },
   "dependencies": {
+    "axios": "^0.27.2",
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-query": "^3.39.2",
+    "recoil": "^0.7.5"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
@@ -22,6 +27,7 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-react": "^7.31.8",
+    "json-server": "^0.17.0",
     "prettier": "^2.7.1",
     "vite": "^3.1.0"
   }
