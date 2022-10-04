@@ -1,7 +1,7 @@
-import React, { memo, useCallback, useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import { useTestPolling } from '../queries'
-import { useGameStore } from '../store/z-game'
 import { debounce } from 'lodash'
+import { useGameStore } from '../store/zustand'
 
 const MillisecondText = () => {
   const polling = useTestPolling()
@@ -10,7 +10,7 @@ const MillisecondText = () => {
   else return <span>none</span>
 }
 
-const Games = memo(() => {
+const Games = () => {
   const [term, setTerm] = useState('')
   const games = useGameStore((state) => state.games)
   const getGames = useGameStore((state) => state.getGames)
@@ -43,6 +43,6 @@ const Games = memo(() => {
       ))}
     </div>
   )
-})
+}
 
 export default Games
