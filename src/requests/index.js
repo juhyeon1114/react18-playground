@@ -7,3 +7,4 @@ const api = axios.create({
 export const getPosts = (params) => api.get('/posts', { params })
 export const getGames = (params) => api.get('/games', { params })
 export const getSports = (params) => api.get('/sports', { params })
+export const createSport = (data) => api.post('/sports', data)

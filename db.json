@@ -1,17 +1,78 @@
 {
   "posts": [
-    { "id": 1, "title": "제목1", "contents": "내용1" },
-    { "id": 2, "title": "제목2", "contents": "내용2" },
-    { "id": 3, "title": "제목3", "contents": "내용3" }
+    {
+      "id": 1,
+      "title": "제목1",
+      "contents": "내용1"
+    },
+    {
+      "id": 2,
+      "title": "제목2",
+      "contents": "내용2"
+    },
+    {
+      "id": 3,
+      "title": "제목3",
+      "contents": "내용3"
+    }
   ],
   "games": [
-    { "id": 1, "name": "Sekiro", "desc": "Ninja game" },
-    { "id": 2, "name": "Ori and the will or wisps", "desc": "2D" },
-    { "id": 3, "name": "Hades", "desc": "Best of rogue-like games" }
+    {
+      "id": 1,
+      "name": "Sekiro",
+      "desc": "Ninja game"
+    },
+    {
+      "id": 2,
+      "name": "Ori and the will or wisps",
+      "desc": "2D"
+    },
+    {
+      "id": 3,
+      "name": "Hades",
+      "desc": "Best of rogue-like games"
+    }
   ],
   "sports": [
-    { "id": 1, "name": "Foot ball", "number": 11 },
-    { "id": 2, "name": "Base ball", "number": 9 },
-    { "id": 3, "name": "Basket ball", "number": 5 }
+    {
+      "id": 1,
+      "name": "Foot ball"
+    },
+    {
+      "id": 2,
+      "name": "Base ball"
+    },
+    {
+      "id": 3,
+      "name": "Basket ball"
+    },
+    {
+      "name": "hhh",
+      "id": 4
+    },
+    {
+      "name": "dd",
+      "id": 5
+    },
+    {
+      "name": "chess",
+      "id": 6
+    },
+    {
+      "name": "hello world",
+      "id": 7
+    },
+    {
+      "name": "hello ",
+      "id": 8
+    },
+    {
+      "name": "good",
+      "id": 9
+    },
+    {
+      "name": "hahaha",
+      "id": 10
+    }
   ]
 }

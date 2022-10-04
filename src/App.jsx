@@ -43,7 +43,7 @@ const App = () => {
 
         <div>
           <h1>
-            Zustand & RQ <button onClick={refetchSports}>Refetch</button>
+            Zustand & Jotai & RQ <button onClick={refetchSports}>Refetch</button>
           </h1>
           <hr />
           <Sports></Sports>
