@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .ts,.tsx",
-    "server": "npx json-server --watch db.json --port 5000 --delay 1000"
+    "server": "npx json-server --watch db.json --port 5000 --delay 1000",
+    "dev:all": "npm run dev & npm run server"
   },
   "dependencies": {
     "axios": "^0.27.2",
