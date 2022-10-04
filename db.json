@@ -8,5 +8,10 @@
     { "id": 1, "name": "Sekiro", "desc": "Ninja game" },
     { "id": 2, "name": "Ori and the will or wisps", "desc": "2D" },
     { "id": 3, "name": "Hades", "desc": "Best of rogue-like games" }
+  ],
+  "sports": [
+    { "id": 1, "name": "Foot ball", "number": 11 },
+    { "id": 2, "name": "Base ball", "number": 9 },
+    { "id": 3, "name": "Basket ball", "number": 5 }
   ]
 }

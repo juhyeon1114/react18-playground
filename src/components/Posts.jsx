@@ -3,14 +3,14 @@ import { useRecoilValueLoadable } from 'recoil'
 import { postsState } from '../store/post'
 
 const Posts = () => {
-  const posts = useRecoilValueLoadable(postsState)
+  const { state, contents } = useRecoilValueLoadable(postsState)
 
-  switch (posts.state) {
+  switch (state) {
     case 'hasValue':
       return (
         <div>
           <div>Posts</div>
-          {posts.contents.map((post) => {
+          {contents.map((post) => {
             return <div key={post.id}>{JSON.stringify(post)}</div>
           })}
         </div>

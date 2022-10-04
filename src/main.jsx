@@ -20,8 +20,8 @@ export const queryClient = new QueryClient({
     queries: {
       retry: 0,
       useErrorBoundary: true,
-      // staleTime: 5000,
-      // cacheTime: 5000
+      staleTime: Infinity,
+      // cacheTime: Infinity,
     },
     mutations: {
       useErrorBoundary: true,

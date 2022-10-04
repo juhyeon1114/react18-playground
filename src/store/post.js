@@ -6,11 +6,16 @@ export const textState = atom({
   default: '',
 })
 
+export const textStateRQ = atom({
+  key: 'textStateRQ',
+  default: '',
+})
+
 export const postsState = selector({
   key: 'postsState',
   get: async ({ get }) => {
     const text = get(textState)
-    const req = await getPosts(text)
+    const req = await getPosts({ q: text })
     return req.data
   },
 })

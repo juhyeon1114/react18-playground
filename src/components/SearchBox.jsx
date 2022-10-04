@@ -1,19 +1,24 @@
 import React, { useState } from 'react'
-import { useSetRecoilState } from 'recoil'
+import { useRecoilState } from 'recoil'
 import { textState } from '../store/post'
 
 const SearchBox = () => {
   const [temp, setTemp] = useState('')
-  const setText = useSetRecoilState(textState)
+  const [text, setText] = useRecoilState(textState)
 
-  const handleSearch = (e) => {
+  const handleChange = (e) => {
+    const v = e.target.value
+    setTemp(v)
+  }
+
+  const handleSubmit = (e) => {
     e.preventDefault()
     setText(temp)
   }
 
   return (
-    <form onSubmit={(e) => handleSearch(e)}>
-      <input type="text" value={temp} onChange={(e) => setTemp(e.target.value)} />
+    <form onSubmit={(e) => handleSubmit(e)}>
+      <input type="text" value={temp} onChange={handleChange} />
       <button type="submit">검색</button>
     </form>
   )
